@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    tools:context=".view.FirstFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/atv_bienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:text="@string/bienvenida_fragment"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/atv_nivel_seguridad_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="270dp"
+        android:hint="Nivel de segutidad:"
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/aet_ingreso_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:gravity="center"
+        android:hint="Ingrese contraseña"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/atv_bienvenida"
+        android:inputType="textPassword"/>
+
+    <!--<androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/abtn_ingreso_passord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aet_ingreso_password"
+        android:layout_marginTop="32dp"/>-->
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
